@@ -1,0 +1,34 @@
+# Arquivo de variáveis de ambiente
+.env
+
+# Diretório de dependências
+node_modules/
+
+# Logs e arquivos de debug
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios do VS Code e IDEs
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de build (caso venha a usar no futuro)
+dist/
+build/
+
+# Cobertura de testes (caso venha a usar)
+coverage/
+
+# SQLite (caso esteja usando SQLite no Sequelize)
+*.sqlite
+*.sqlite3
+
+# Arquivo de configuração local do Sequelize (opcional)
+.sequelizerc
