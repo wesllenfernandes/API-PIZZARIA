@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize('pizzalab', 'root', 'Dev#full2%', {
+const sequelize = new Sequelize('pizzalab', 'root', '2000', {
   host: 'localhost',
   dialect: 'mysql',
   port: 3306,
