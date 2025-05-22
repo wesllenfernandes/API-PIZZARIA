@@ -1,8 +1,8 @@
-import dotenv from 'dotenv';
-dotenv.config();
+"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _dotenv = require('dotenv'); var _dotenv2 = _interopRequireDefault(_dotenv);
+_dotenv2.default.config();
 
 
-import { Sequelize } from "sequelize";
+var _sequelize = require('sequelize');
 
 
 /*const sequelize = new Sequelize(
@@ -21,7 +21,7 @@ import { Sequelize } from "sequelize";
   }
 );
 */
-const sequelize = new Sequelize('railway', 'root', 'QAlsHTOLiWTsPtzcwBlipbxSgrvzhaoI', {
+const sequelize = new (0, _sequelize.Sequelize)('railway', 'root', 'QAlsHTOLiWTsPtzcwBlipbxSgrvzhaoI', {
   host: 'yamanote.proxy.rlwy.net',
   dialect: 'mysql',
   port: 	35851,
@@ -47,5 +47,5 @@ sequelize.authenticate()
   .then(() => console.log("✅ Conectado ao banco de dados com sucesso!"))
   .catch(err => console.error("❌ Erro ao conectar ao banco:", err));
 
-export default sequelize;
+exports. default = sequelize;
 //module.exports = sequelize;
